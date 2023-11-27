@@ -1,6 +1,7 @@
 import React from "react";
 import { Layout } from "../components/Layouts/Layout";
 import { useAuth } from "../context/authContext";
+import ChatComponent from "./ChatComponent";
 
 export const HomePage = () => {
   const [auth, setAuth] = useAuth();
@@ -8,6 +9,7 @@ export const HomePage = () => {
     <Layout title="Главная">
       <h1>HomePage</h1>
       <pre>{JSON.stringify(auth, null, 4)}</pre>
+      <ChatComponent />
     </Layout>
   );
 };

@@ -2,6 +2,7 @@ import React from "react";
 import { Layout } from "../../components/Layouts/Layout";
 import AdminMenu from "../../components/Layouts/AdminMenu";
 import { useAuth } from "../../context/authContext";
+import ChatComponent from "../ChatComponent";
 
 const AdminDashboard = () => {
   const [auth] = useAuth();
@@ -21,6 +22,7 @@ const AdminDashboard = () => {
           </div>
         </div>
       </div>
+      <ChatComponent />
     </Layout>
   );
 };
